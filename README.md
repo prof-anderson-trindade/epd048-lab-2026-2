@@ -26,6 +26,14 @@ cd roteiro05
 
 O Git avisa que você está em *detached HEAD*; isso é esperado. Crie um branch para trabalhar, sempre a partir da tag: `git switch -c meu-branch roteiro-05`.
 
+Nas aulas, o projeto é usado como ponto de partida, não como repositório para contribuir. Por isso, depois do clone, remova o remoto de origem, para que seus commits fiquem só na sua máquina e nenhum `git push` possa ir ao repositório da disciplina:
+
+```bash
+git remote remove origin
+```
+
+O histórico e a tag `roteiro-05` continuam no projeto; só a ligação com o GitHub é desfeita.
+
 ## Instalação
 
 O banco é um arquivo SQLite que não vem no repositório. Crie-o **antes** de qualquer outra coisa:
