@@ -16,6 +16,7 @@ Cada roteiro parte de uma **tag** deste repositório, para que todos comecem do 
 | Tag | Roteiro | O que contém |
 | --- | --- | --- |
 | `roteiro-05` | Chat no terminal com o OpenCode | O projeto base, com os comandos de usuário abaixo. |
+| `roteiro-06` | O caminho de um pedido | O mesmo projeto base do `roteiro-05`. |
 
 Para começar um roteiro, clone a tag:
 
