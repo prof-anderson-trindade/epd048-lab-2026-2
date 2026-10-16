@@ -17,6 +17,7 @@ Cada roteiro parte de uma **tag** deste repositório, para que todos comecem do 
 | --- | --- | --- |
 | `roteiro-05` | Chat no terminal com o OpenCode | O projeto base, com os comandos de usuário abaixo. |
 | `roteiro-06` | O caminho de um pedido | O mesmo projeto base do `roteiro-05`. |
+| `roteiro-07` | Não confie no navegador | O mural de recados do fim do roteiro 06 e as contas de exemplo da Ana e do Bruno (`php artisan db:seed`). |
 
 Para começar um roteiro, clone a tag:
 

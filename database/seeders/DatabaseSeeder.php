@@ -15,11 +15,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $ana = User::factory()->create([
+            'name' => 'Ana',
+            'email' => 'ana@mural.test',
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $bruno = User::factory()->create([
+            'name' => 'Bruno',
+            'email' => 'bruno@mural.test',
+        ]);
+
+        $ana->recados()->createMany([
+            ['texto' => 'Reunião do grupo amanhã às 14h, na sala 12.'],
+            ['texto' => 'Alguém tem o link da aula de ontem?'],
+        ]);
+
+        $bruno->recados()->createMany([
+            ['texto' => 'Vou levar bolo de cenoura para a reunião.'],
+            ['texto' => 'Lembrete: a entrega do trabalho é na sexta.'],
         ]);
     }
 }
