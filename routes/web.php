@@ -13,6 +13,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('mural', [RecadoController::class, 'index'])->name('mural');
     Route::post('mural', [RecadoController::class, 'store'])->name('mural.store');
+    Route::delete('mural/{recado}', [RecadoController::class, 'destroy'])->name('mural.destroy');
 });
 
 require __DIR__.'/settings.php';
