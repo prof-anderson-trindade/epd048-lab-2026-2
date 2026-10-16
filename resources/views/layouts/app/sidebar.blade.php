@@ -19,6 +19,10 @@
                     <flux:sidebar.item icon="megaphone" :href="route('mural')" :current="request()->routeIs('mural')" wire:navigate>
                         {{ __('Mural') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="magnifying-glass" :href="route('mural.busca')" :current="request()->routeIs('mural.busca')" wire:navigate>
+                        {{ __('Busca') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 

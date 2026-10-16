@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MuralBuscaController;
 use App\Http\Controllers\OlaController;
 use App\Http\Controllers\RecadoController;
 use Illuminate\Support\Facades\Route;
@@ -14,6 +15,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('mural', [RecadoController::class, 'index'])->name('mural');
     Route::post('mural', [RecadoController::class, 'store'])->name('mural.store');
     Route::delete('mural/{recado}', [RecadoController::class, 'destroy'])->name('mural.destroy');
+
+    Route::get('mural/busca', [MuralBuscaController::class, 'index'])->name('mural.busca');
 });
 
 require __DIR__.'/settings.php';

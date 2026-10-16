@@ -19,6 +19,7 @@ Cada roteiro parte de uma **tag** deste repositório, para que todos comecem do 
 | `roteiro-06` | O caminho de um pedido | O mesmo projeto base do `roteiro-05`. |
 | `roteiro-07` | Não confie no navegador | O mural de recados do fim do roteiro 06 e as contas de exemplo da Ana e do Bruno (`php artisan db:seed`). |
 | `roteiro-08` | SQL injection | O mural do fim do roteiro 07, protegido contra XSS, atribuição em massa e apagar recado alheio. |
+| `roteiro-09` | Senhas não se faz à mão | O mural do fim do roteiro 08, com a busca segura nos recados. |
 
 Para começar um roteiro, clone a tag:
 
